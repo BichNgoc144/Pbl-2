@@ -3,332 +3,470 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
-#include <unordered_set>
+#include <unordered_map>
 
 using namespace std;
 
-// Lớp cơ sở: Person
+const int SO_KHOA = 5;
+const int SO_LOP_TRONG_KHOA = 3;
+
+// Base class: Person
 class Person {
 protected:
+    string id;
     string hoTen;
-    string boPhan; // Khoa, lớp hoặc vị trí công tác
+    string boPhan; // Khoa và lớp
     int namSinh;
     string gioiTinh;
     string diaChi;
     string soDienThoai;
 
 public:
-    Person(string ten, string bp, int ns, string gt, string dc, string sdt)
-        : hoTen(ten), boPhan(bp), namSinh(ns), gioiTinh(gt), diaChi(dc), soDienThoai(sdt) {}
+    Person(const string& id, const string& ten, const string& bp, int ns, const string& gt, const string& dc, const string& sdt)
+        : id(id), hoTen(ten), boPhan(bp), namSinh(ns), gioiTinh(gt), diaChi(dc), soDienThoai(sdt) {}
 
-    virtual bool xetKhenThuong() = 0; // Phương thức ảo xét khen thưởng
+    virtual bool xetKhenThuong() const = 0; // Pure virtual function for award evaluation
 
-    string getHoTen() { return hoTen; }
-    string getBoPhan() { return boPhan; }
+    string getId() const { return id; }
+    string getHoTen() const { return hoTen; }
+    string getBoPhan() const { return boPhan; }
 
-    virtual void hienThi() = 0; // Phương thức ảo để hiển thị thông tin cá nhân
+    virtual void hienThi() const = 0; // Pure virtual function for displaying information
 
-    virtual ~Person() {} // Destructor ảo
+    virtual void capNhatThongTin() = 0; // Pure virtual function for updating information
+
+    virtual ~Person() {} // Virtual destructor
 };
 
-// Lớp dẫn xuất: SinhVien
+// Derived class: SinhVien
 class SinhVien : public Person {
 private:
-    float diemTBC; // Điểm trung bình tích lũy
-    float diemRenLuyen; // Điểm rèn luyện
-    int soTinChi; // Số tín chỉ đã hoàn thành
-    string chuyenNganh; // Chuyên ngành của sinh viên
-    string truong; // Trường đại học/cao đẳng
+    float diemTBC;
+    float diemRenLuyen;
+    int soTinChi;
+    string chuyenNganh;
+    string truong;
 
 public:
-    SinhVien(string ten, string bp, int ns, string gt, string dc, string sdt,
-             float dtbc, float drl, int stc, string cn, string trg)
-        : Person(ten, bp, ns, gt, dc, sdt), diemTBC(dtbc), diemRenLuyen(drl),
+    SinhVien(const string& id, const string& ten, const string& bp, int ns, const string& gt, const string& dc, const string& sdt,
+             float dtbc, float drl, int stc, const string& cn, const string& trg)
+        : Person(id, ten, bp, ns, gt, dc, sdt), diemTBC(dtbc), diemRenLuyen(drl),
           soTinChi(stc), chuyenNganh(cn), truong(trg) {}
 
-    bool xetKhenThuong() override {
-        // Điều kiện khen thưởng: Điểm TBC >= 8.0 và Điểm rèn luyện >= 85
+    bool xetKhenThuong() const override {
         return diemTBC >= 8.0 && diemRenLuyen >= 85;
     }
 
-    void hienThi() override {
-        cout << "Sinh Viên - Họ tên: " << hoTen << ", Năm sinh: " << namSinh << ", Giới tính: " << gioiTinh
-             << ", Điểm TBC: " << diemTBC << ", Điểm rèn luyện: " << diemRenLuyen << ", Số tín chỉ: " << soTinChi 
-             << ", Chuyên ngành: " << chuyenNganh << ", Trường: " << truong << endl;
+    void hienThi() const override {
+        cout << "Sinh Viên - ID: " << id << ", Họ tên: " << hoTen << ", Khoa và lớp: " << boPhan << ", Năm sinh: " << namSinh 
+             << ", Giới tính: " << gioiTinh << ", Điểm TBC: " << diemTBC << ", Điểm rèn luyện: " << diemRenLuyen 
+             << ", Số tín chỉ: " << soTinChi << ", Chuyên ngành: " << chuyenNganh << ", Trường: " << truong << endl;
+    }
+
+    void capNhatThongTin() override {
+        cout << "Cập nhật thông tin Sinh viên:\n";
+        cout << "Nhập tên: ";
+        getline(cin, hoTen);
+        cout << "Nhập khoa và lớp: ";
+        getline(cin, boPhan);
+        cout << "Nhập năm sinh: ";
+        cin >> namSinh;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập giới tính: ";
+        getline(cin, gioiTinh);
+        cout << "Nhập điểm TBC: ";
+        cin >> diemTBC;
+        cout << "Nhập điểm rèn luyện: ";
+        cin >> diemRenLuyen;
+        cout << "Nhập số tín chỉ: ";
+        cin >> soTinChi;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập chuyên ngành: ";
+        getline(cin, chuyenNganh);
+        cout << "Nhập trường: ";
+        getline(cin, truong);
     }
 };
 
-// Lớp dẫn xuất: GiangVien
+// Derived class: GiangVien
 class GiangVien : public Person {
 private:
-    string khoa; // Khoa đang công tác
-    string viTri; // Vị trí công tác
-    string thanhTuu; // Thành tựu nghiên cứu
-    int soNamGiangDay; // Số năm giảng dạy
-    string hocVi; // Học vị (Thạc sĩ, Tiến sĩ, v.v.)
-    int soLuongCongTrinh; // Số lượng công trình nghiên cứu đã hoàn thành
-    string truongBoMon; // Bộ môn thuộc trường
+    string khoa;
+    string viTri;
+    string thanhTuu;
+    int soNamGiangDay;
+    string hocVi;
+    int soLuongCongTrinh;
+    string truongBoMon;
 
 public:
-    GiangVien(string ten, string bp, int ns, string gt, string dc, string sdt,
-              string k, string vt, string tt, int sny, string hv, int slct, string tbm)
-        : Person(ten, bp, ns, gt, dc, sdt), khoa(k), viTri(vt), thanhTuu(tt),
+    GiangVien(const string& id, const string& ten, const string& bp, int ns, const string& gt, const string& dc, const string& sdt,
+              const string& k, const string& vt, const string& tt, int sny, const string& hv, int slct, const string& tbm)
+        : Person(id, ten, bp, ns, gt, dc, sdt), khoa(k), viTri(vt), thanhTuu(tt),
           soNamGiangDay(sny), hocVi(hv), soLuongCongTrinh(slct), truongBoMon(tbm) {}
 
-    bool xetKhenThuong() override {
-        // Điều kiện khen thưởng: Có ít nhất 5 công trình nghiên cứu
+    bool xetKhenThuong() const override {
         return soLuongCongTrinh >= 5;
     }
 
-    void hienThi() override {
-        cout << "Giảng Viên - Họ tên: " << hoTen << ", Năm sinh: " << namSinh << ", Giới tính: " << gioiTinh
-             << ", Khoa: " << khoa << ", Vị trí: " << viTri << ", Thành tựu: " << thanhTuu
+    void hienThi() const override {
+        cout << "Giảng Viên - ID: " << id << ", Họ tên: " << hoTen << ", Khoa và lớp: " << boPhan << ", Năm sinh: " << namSinh
+             << ", Giới tính: " << gioiTinh << ", Khoa: " << khoa << ", Vị trí: " << viTri << ", Thành tựu: " << thanhTuu
              << ", Số năm giảng dạy: " << soNamGiangDay << ", Học vị: " << hocVi 
              << ", Số công trình: " << soLuongCongTrinh << ", Trường bộ môn: " << truongBoMon << endl;
     }
+
+    void capNhatThongTin() override {
+        cout << "Cập nhật thông tin Giảng viên:\n";
+        cout << "Nhập tên: ";
+        getline(cin, hoTen);
+        cout << "Nhập khoa và lớp: ";
+        getline(cin, boPhan);
+        cout << "Nhập năm sinh: ";
+        cin >> namSinh;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập giới tính: ";
+        getline(cin, gioiTinh);
+        cout << "Nhập khoa: ";
+        getline(cin, khoa);
+        cout << "Nhập vị trí: ";
+        getline(cin, viTri);
+        cout << "Nhập thành tựu: ";
+        getline(cin, thanhTuu);
+        cout << "Nhập số năm giảng dạy: ";
+        cin >> soNamGiangDay;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập học vị: ";
+        getline(cin, hocVi);
+        cout << "Nhập số công trình: ";
+        cin >> soLuongCongTrinh;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập trường bộ môn: ";
+        getline(cin, truongBoMon);
+    }
 };
 
-// Lớp dẫn xuất: QuanLy
+// Derived class: QuanLy
 class QuanLy : public Person {
 private:
-    string viTri; // Vị trí công tác
-    string noLuc; // Nỗ lực được ghi nhận
-    int soNamCongTac; // Số năm công tác trong ngành
-    string phongBan; // Phòng ban trực thuộc
-    string trinhDo; // Trình độ chuyên môn
-    int soLuongDuAn; // Số lượng dự án đã hoàn thành hoặc đang quản lý
+    string viTri;
+    string noLuc;
+    int soNamCongTac;
+    string phongBan;
+    string trinhDo;
+    int soLuongDuAn;
 
 public:
-    QuanLy(string ten, string bp, int ns, string gt, string dc, string sdt,
-           string vt, string nl, int snct, string pb, string td, int slda)
-        : Person(ten, bp, ns, gt, dc, sdt), viTri(vt), noLuc(nl), soNamCongTac(snct),
+    QuanLy(const string& id, const string& ten, const string& bp, int ns, const string& gt, const string& dc, const string& sdt,
+           const string& vt, const string& nl, int snct, const string& pb, const string& td, int slda)
+        : Person(id, ten, bp, ns, gt, dc, sdt), viTri(vt), noLuc(nl), soNamCongTac(snct),
           phongBan(pb), trinhDo(td), soLuongDuAn(slda) {}
 
-    bool xetKhenThuong() override {
-        // Điều kiện khen thưởng: Có ít nhất 3 dự án thành công và trên 10 năm công tác
+    bool xetKhenThuong() const override {
         return soLuongDuAn >= 3 && soNamCongTac >= 10;
     }
 
-    void hienThi() override {
-        cout << "Quản Lý - Họ tên: " << hoTen << ", Năm sinh: " << namSinh << ", Giới tính: " << gioiTinh
-             << ", Vị trí: " << viTri << ", Nỗ lực: " << noLuc << ", Số năm công tác: " << soNamCongTac
-             << ", Phòng ban: " << phongBan << ", Trình độ: " << trinhDo 
-             << ", Số dự án: " << soLuongDuAn << endl;
+    void hienThi() const override {
+        cout << "Quản Lý - ID: " << id << ", Họ tên: " << hoTen << ", Khoa và lớp: " << boPhan << ", Năm sinh: " << namSinh
+             << ", Giới tính: " << gioiTinh << ", Vị trí: " << viTri << ", Nỗ lực: " << noLuc 
+             << ", Số năm công tác: " << soNamCongTac << ", Phòng ban: " << phongBan 
+             << ", Trình độ: " << trinhDo << ", Số dự án: " << soLuongDuAn << endl;
+    }
+
+    void capNhatThongTin() override {
+        cout << "Cập nhật thông tin Quản lý:\n";
+        cout << "Nhập tên: ";
+        getline(cin, hoTen);
+        cout << "Nhập khoa và lớp: ";
+        getline(cin, boPhan);
+        cout << "Nhập năm sinh: ";
+        cin >> namSinh;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập giới tính: ";
+        getline(cin, gioiTinh);
+        cout << "Nhập vị trí: ";
+        getline(cin, viTri);
+        cout << "Nhập nỗ lực: ";
+        getline(cin, noLuc);
+        cout << "Nhập số năm công tác: ";
+        cin >> soNamCongTac;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập phòng ban: ";
+        getline(cin, phongBan);
+        cout << "Nhập trình độ: ";
+        getline(cin, trinhDo);
+        cout << "Nhập số dự án: ";
+        cin >> soLuongDuAn;
     }
 };
 
-// Danh sách khen thưởng
-vector<Person*> danhSachKhenThuong;
-
-// Hàm thêm người vào danh sách khen thưởng
-void themNguoiKhenThuong(Person* person) {
-    if (person->xetKhenThuong()) {
-        danhSachKhenThuong.push_back(person);
-    }
-}
-
-// Hàm thống kê mức thưởng từng cá nhân
-void thongKeMucThuong() {
-    cout << "Danh sách cá nhân được khen thưởng:" << endl;
-    for (Person* person : danhSachKhenThuong) {
-        person->hienThi(); // Hiển thị thông tin cá nhân
-    }
-}
-
-// Hàm đọc dữ liệu từ file cho SinhVien
-void docDuLieuTuFileSinhVien(const string& tenFile) {
+// Function to read data from file and create objects
+void docDuLieuTuFile(const string& tenFile, vector<Person*>& danhSach, bool laSinhVien) {
     ifstream file(tenFile);
     if (!file.is_open()) {
-        cerr << "Không thể mở file: " << tenFile << endl;
+        cout << "Không thể mở file " << tenFile << endl;
         return;
     }
 
     string line;
-    unordered_set<string> daXem; // Tập hợp để kiểm tra dữ liệu đã được xử lý
-
     while (getline(file, line)) {
         stringstream ss(line);
-        string stt, ten, gt, ns_str, bp, drl_str, dtbc_str, stc_str, lop, khoa;
-        float dtbc, drl;
-        int ns, stc;
+        string id, hoTen, boPhan, gioiTinh, diaChi, soDienThoai;
+        int namSinh;
+        getline(ss, id, '|');
+        getline(ss, hoTen, '|');
+        getline(ss, boPhan, '|');
+        ss >> namSinh;
+        ss.ignore(); // To ignore the newline character
+        getline(ss, gioiTinh, '|');
+        getline(ss, diaChi, '|');
+        getline(ss, soDienThoai, '|');
 
-        // Đọc dữ liệu từ dòng và phân tách bằng ký tự '|'
-        getline(ss, stt, '|');
-        ss.ignore();
-        getline(ss, ten, '|');
-        ss.ignore();
-        getline(ss, gt, '|');
-        ss.ignore();
-        getline(ss, ns_str, '|');
-        ss.ignore();
-        ss >> dtbc >> drl >> stc;
-        ss.ignore(); // Bỏ qua ký tự phân cách
-        getline(ss, lop, '|');
-        ss.ignore();
-        getline(ss, khoa);
-
-        // Chuyển đổi ngày sinh từ chuỗi sang số nguyên
-        ns = stoi(ns_str);
-        dtbc = stof(dtbc_str);
-        drl = stof(drl_str);
-        stc = stoi(stc_str);
-
-        // Tạo đối tượng SinhVien
-        SinhVien* sv = new SinhVien(ten, lop, ns, gt, "", "", dtbc, drl, stc, "", khoa);
-
-        // Kiểm tra xem dữ liệu đã được xử lý chưa
-        if (daXem.find(ten) == daXem.end()) {
-            daXem.insert(ten);
-            sv->hienThi(); // Hiển thị thông tin sinh viên
-            themNguoiKhenThuong(sv);
+        if (laSinhVien) {
+            float diemTBC, diemRenLuyen;
+            int soTinChi;
+            string chuyenNganh, truong;
+            ss >> diemTBC >> diemRenLuyen >> soTinChi;
+            ss.ignore(); // To ignore the newline character
+            getline(ss, chuyenNganh, '|');
+            getline(ss, truong, '|');
+            danhSach.push_back(new SinhVien(id, hoTen, boPhan, namSinh, gioiTinh, diaChi, soDienThoai,
+                                             diemTBC, diemRenLuyen, soTinChi, chuyenNganh, truong));
         } else {
-            delete sv; // Xóa đối tượng nếu đã được xử lý
+            string khoa, viTri, thanhTuu, hocVi, truongBoMon;
+            int soNamGiangDay, soLuongCongTrinh;
+            ss.ignore(); // To ignore the newline character
+            getline(ss, khoa, '|');
+            getline(ss, viTri, '|');
+            getline(ss, thanhTuu, '|');
+            ss >> soNamGiangDay >> hocVi >> soLuongCongTrinh;
+            ss.ignore(); // To ignore the newline character
+            getline(ss, truongBoMon, '|');
+            danhSach.push_back(new GiangVien(id, hoTen, boPhan, namSinh, gioiTinh, diaChi, soDienThoai,
+                                              khoa, viTri, thanhTuu, soNamGiangDay, hocVi, soLuongCongTrinh, truongBoMon));
         }
     }
 
     file.close();
 }
 
-// Hàm đọc dữ liệu từ file cho GiangVien
-void docDuLieuTuFileGiangVien(const string& tenFile) {
-    ifstream file(tenFile);
-    if (!file.is_open()) {
-        cerr << "Không thể mở file: " << tenFile << endl;
+// Function to find a person by ID
+Person* timKiemTheoID(const vector<Person*>& danhSach, const string& id) {
+    for (Person* p : danhSach) {
+        if (p->getId() == id) {
+            return p;
+        }
+    }
+    return nullptr;
+}
+
+// Function to delete a person by ID
+void xoaTheoID(vector<Person*>& danhSach, const string& id) {
+    for (auto it = danhSach.begin(); it != danhSach.end(); ++it) {
+        if ((*it)->getId() == id) {
+            delete *it;
+            danhSach.erase(it);
+            cout << "Đã xóa người với ID " << id << endl;
+            return;
+        }
+    }
+    cout << "Không tìm thấy người với ID " << id << endl;
+}
+
+// Function to display the list of people
+void hienThiDanhSach(const vector<Person*>& danhSach) {
+    for (const Person* p : danhSach) {
+        p->hienThi();
+    }
+}
+
+// Function to update information by ID
+void capNhatThongTinTheoID(vector<Person*>& danhSach, const string& id) {
+    Person* p = timKiemTheoID(danhSach, id);
+    if (p) {
+        p->capNhatThongTin();
+    } else {
+        cout << "Không tìm thấy người với ID " << id << endl;
+    }
+}
+
+// Function to check if an ID is valid
+bool idHopLe(const vector<Person*>& danhSach, const string& id) {
+    return timKiemTheoID(danhSach, id) == nullptr;
+}
+
+// Function to add a new person
+void themNguoiMoi(vector<Person*>& danhSach) {
+    string id, hoTen, boPhan, gioiTinh, diaChi, soDienThoai;
+    int namSinh;
+    string loai;
+    cout << "Nhập loại người (SinhVien/GiangVien/QuanLy): ";
+    getline(cin, loai);
+    cout << "Nhập ID: ";
+    getline(cin, id);
+
+    if (!idHopLe(danhSach, id)) {
+        cout << "ID đã tồn tại. Vui lòng nhập lại.\n";
         return;
     }
 
-    string line;
-    unordered_set<string> daXem; // Tập hợp để kiểm tra dữ liệu đã được xử lý
+    cout << "Nhập tên: ";
+    getline(cin, hoTen);
+    cout << "Nhập khoa và lớp: ";
+    getline(cin, boPhan);
+    cout << "Nhập năm sinh: ";
+    cin >> namSinh;
+    cin.ignore(); // To ignore the newline character left in the buffer
+    cout << "Nhập giới tính: ";
+    getline(cin, gioiTinh);
+    cout << "Nhập địa chỉ: ";
+    getline(cin, diaChi);
+    cout << "Nhập số điện thoại: ";
+    getline(cin, soDienThoai);
 
-    while (getline(file, line)) {
-        stringstream ss(line);
-        string stt, ten, bp, gt, dc, sdt, khoa, vt, tt, hv, tbm;
-        int ns, sny, slct;
-
-        // Đọc dữ liệu từ dòng và phân tách bằng ký tự '|'
-        getline(ss, stt, '|');
-        getline(ss, ten, '|');
-        getline(ss, bp, '|');
-        getline(ss, gt, '|');
-        getline(ss, dc, '|');
-        getline(ss, sdt, '|');
-        getline(ss, khoa, '|');
-        getline(ss, vt, '|');
-        getline(ss, tt, '|');
-        ss >> sny;
-        ss.ignore(); // Bỏ qua ký tự phân cách
-        getline(ss, hv, '|');
-        ss >> slct;
-        ss.ignore();
-        getline(ss, tbm);
-
-        // Tạo đối tượng GiangVien
-        GiangVien* gv = new GiangVien(ten, bp, ns, gt, dc, sdt, khoa, vt, tt, sny, hv, slct, tbm);
-
-        // Kiểm tra xem dữ liệu đã được xử lý chưa
-        if (daXem.find(ten) == daXem.end()) {
-            daXem.insert(ten);
-            gv->hienThi(); // Hiển thị thông tin giảng viên
-            themNguoiKhenThuong(gv);
-        } else {
-            delete gv; // Xóa đối tượng nếu đã được xử lý
-        }
-    }
-
-    file.close();
-}
-
-// Hàm đọc dữ liệu từ file cho QuanLy
-void docDuLieuTuFileQuanLy(const string& tenFile) {
-    ifstream file(tenFile);
-    if (!file.is_open()) {
-        cerr << "Không thể mở file: " << tenFile << endl;
-        return;
-    }
-
-    string line;
-    unordered_set<string> daXem; // Tập hợp để kiểm tra dữ liệu đã được xử lý
-
-    while (getline(file, line)) {
-        stringstream ss(line);
-        string stt, ten, bp, gt, dc, sdt, vt, noLuc, phongBan, trinhDo;
-        int ns, snct, slda;
-
-        // Đọc dữ liệu từ dòng và phân tách bằng ký tự '|'
-        getline(ss, stt, '|');
-        getline(ss, ten, '|');
-        getline(ss, bp, '|');
-        getline(ss, gt, '|');
-        getline(ss, dc, '|');
-        getline(ss, sdt, '|');
-        getline(ss, vt, '|');
-        getline(ss, noLuc, '|');
-        ss >> snct >> slda;
-        ss.ignore(); // Bỏ qua ký tự phân cách
-        getline(ss, phongBan, '|');
-        getline(ss, trinhDo);
-
-        // Tạo đối tượng QuanLy
-        QuanLy* ql = new QuanLy(ten, bp, ns, gt, dc, sdt, vt, noLuc, snct, phongBan, trinhDo, slda);
-
-        // Kiểm tra xem dữ liệu đã được xử lý chưa
-        if (daXem.find(ten) == daXem.end()) {
-            daXem.insert(ten);
-            ql->hienThi(); // Hiển thị thông tin quản lý
-            themNguoiKhenThuong(ql);
-        } else {
-            delete ql; // Xóa đối tượng nếu đã được xử lý
-        }
-    }
-
-    file.close();
-}
-
-// Hàm chọn loại đối tượng và đọc file tương ứng
-void chonLoaiDoiTuong() {
-    int choice;
-    string tenFile;
-    cout << "Chọn loại đối tượng cần nhập:\n";
-    cout << "1. Sinh viên\n";
-    cout << "2. Giảng viên\n";
-    cout << "3. Quản lý\n";
-    cout << "Nhập lựa chọn: ";
-    cin >> choice;
-
-    cout << "Nhập tên file chứa dữ liệu: ";
-    cin >> tenFile;
-
-    int retries = 3;
-    while (retries > 0) {
-        if (choice == 1) {
-            docDuLieuTuFileSinhVien(tenFile);
-            break;
-        } else if (choice == 2) {
-            docDuLieuTuFileGiangVien(tenFile);
-            break;
-        } else if (choice == 3) {
-            docDuLieuTuFileQuanLy(tenFile);
-            break;
-        } else {
-            cout << "Lựa chọn không hợp lệ. Hãy thử lại." << endl;
-        }
-        retries--;
-        if (retries > 0) {
-            cout << "Nhập tên file chứa dữ liệu: ";
-            cin >> tenFile;
-        }
-    }
-    if (retries == 0) {
-        cout << "Bạn đã hết lượt nhập." << endl;
+    if (loai == "SinhVien") {
+        float diemTBC, diemRenLuyen;
+        int soTinChi;
+        string chuyenNganh, truong;
+        cout << "Nhập điểm TBC: ";
+        cin >> diemTBC;
+        cout << "Nhập điểm rèn luyện: ";
+        cin >> diemRenLuyen;
+        cout << "Nhập số tín chỉ: ";
+        cin >> soTinChi;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập chuyên ngành: ";
+        getline(cin, chuyenNganh);
+        cout << "Nhập trường: ";
+        getline(cin, truong);
+        danhSach.push_back(new SinhVien(id, hoTen, boPhan, namSinh, gioiTinh, diaChi, soDienThoai,
+                                         diemTBC, diemRenLuyen, soTinChi, chuyenNganh, truong));
+    } else if (loai == "GiangVien") {
+        string khoa, viTri, thanhTuu, hocVi, truongBoMon;
+        int soNamGiangDay, soLuongCongTrinh;
+        cout << "Nhập khoa: ";
+        getline(cin, khoa);
+        cout << "Nhập vị trí: ";
+        getline(cin, viTri);
+        cout << "Nhập thành tựu: ";
+        getline(cin, thanhTuu);
+        cout << "Nhập số năm giảng dạy: ";
+        cin >> soNamGiangDay;
+        cout << "Nhập học vị: ";
+        cin.ignore(); // To ignore the newline character left in the buffer
+        getline(cin, hocVi);
+        cout << "Nhập số công trình: ";
+        cin >> soLuongCongTrinh;
+        cin.ignore(); // To ignore the newline character left in the buffer
+        cout << "Nhập trường bộ môn: ";
+        getline(cin, truongBoMon);
+        danhSach.push_back(new GiangVien(id, hoTen, boPhan, namSinh, gioiTinh, diaChi, soDienThoai,
+                                          khoa, viTri, thanhTuu, soNamGiangDay, hocVi, soLuongCongTrinh, truongBoMon));
+    } else if (loai == "QuanLy") {
+        string viTri, noLuc, phongBan, trinhDo;
+        int soNamCongTac, soLuongDuAn;
+        cout << "Nhập vị trí: ";
+        getline(cin, viTri);
+        cout << "Nhập nỗ lực: ";
+        getline(cin, noLuc);
+        cout << "Nhập số năm công tác: ";
+        cin >> soNamCongTac;
+        cout << "Nhập phòng ban: ";
+        cin.ignore(); // To ignore the newline character left in the buffer
+        getline(cin, phongBan);
+        cout << "Nhập trình độ: ";
+        getline(cin, trinhDo);
+        cout << "Nhập số dự án: ";
+        cin >> soLuongDuAn;
+        danhSach.push_back(new QuanLy(id, hoTen, boPhan, namSinh, gioiTinh, diaChi, soDienThoai,
+                                       viTri, noLuc, soNamCongTac, phongBan, trinhDo, soLuongDuAn));
+    } else {
+        cout << "Loại người không hợp lệ.\n";
     }
 }
 
 int main() {
-    // Cho phép người dùng chọn loại đối tượng và nhập dữ liệu
-    chonLoaiDoiTuong();
+    vector<Person*> danhSach;
+    int choice;
+    string tenFile;
 
-    // Hiển thị danh sách khen thưởng
-    thongKeMucThuong();
+    while (true) {
+        cout << "Chọn chức năng:\n";
+        cout << "1. Đọc dữ liệu từ file Sinh viên\n";
+        cout << "2. Đọc dữ liệu từ file Giảng viên\n";
+        cout << "3. Đọc dữ liệu từ file Quản lý\n";
+        cout << "4. Tìm người theo ID\n";
+        cout << "5. Xóa người theo ID\n";
+        cout << "6. Cập nhật thông tin người theo ID\n";
+        cout << "7. Hiển thị danh sách người\n";
+        cout << "8. Thêm người mới\n";
+        cout << "9. Thoát chương trình\n";
+        cout << "Chọn chức năng: ";
+        cin >> choice;
+        cin.ignore(); // To ignore the newline character left in the buffer
 
-    return 0;
+        switch (choice) {
+            case 1: // Đọc dữ liệu từ file Sinh viên
+                cout << "Nhập tên file dữ liệu Sinh viên: ";
+                getline(cin, tenFile);
+                docDuLieuTuFile(tenFile, danhSach, true);
+                break;
+
+            case 2: // Đọc dữ liệu từ file Giảng viên
+                cout << "Nhập tên file dữ liệu Giảng viên: ";
+                getline(cin, tenFile);
+                docDuLieuTuFile(tenFile, danhSach, false);
+                break;
+
+            case 3: // Đọc dữ liệu từ file Quản lý
+                cout << "Nhập tên file dữ liệu Quản lý: ";
+                getline(cin, tenFile);
+                docDuLieuTuFile(tenFile, danhSach, false);
+                break;
+
+            case 4: // Tìm người theo ID
+                cout << "Nhập ID để tìm: ";
+                getline(cin, tenFile); // Using tenFile as ID
+                {
+                    Person* p = timKiemTheoID(danhSach, tenFile);
+                    if (p) {
+                        p->hienThi();
+                    } else {
+                        cout << "Không tìm thấy người với ID " << tenFile << endl;
+                    }
+                }
+                break;
+
+            case 5: // Xóa người theo ID
+                cout << "Nhập ID để xóa: ";
+                getline(cin, tenFile); // Using tenFile as ID
+                xoaTheoID(danhSach, tenFile);
+                break;
+
+            case 6: // Cập nhật thông tin người theo ID
+                cout << "Nhập ID để cập nhật: ";
+                getline(cin, tenFile); // Using tenFile as ID
+                capNhatThongTinTheoID(danhSach, tenFile);
+                break;
+
+            case 7: // Hiển thị danh sách người
+                hienThiDanhSach(danhSach);
+                break;
+
+            case 8: // Thêm người mới
+                themNguoiMoi(danhSach);
+                break;
+
+            case 9: // Thoát chương trình
+                for (Person* p : danhSach) {
+                    delete p;
+                }
+                danhSach.clear();
+                cout << "Đã thoát chương trình.\n";
+                return 0;
+
+            default:
+                cout << "Lựa chọn không hợp lệ, vui lòng chọn lại.\n";
+        }
+    }
 }
