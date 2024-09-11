@@ -58,9 +58,11 @@ public:
     }
 
     void hienThi() const override {
-        cout << "Sinh Viên - ID: " << id << ", Họ tên: " << hoTen << ", Khoa và lớp: " << boPhan << ", Năm sinh: " << namSinh 
-             << ", Giới tính: " << gioiTinh << ", Điểm TBC: " << diemTBC << ", Điểm rèn luyện: " << diemRenLuyen 
-             << ", Số tín chỉ: " << soTinChi << ", Chuyên ngành: " << chuyenNganh << ", Trường: " << truong << endl;
+        cout << "Sinh Viên - ID" << ", Họ tên " << ", Khoa và lớp " << ", Năm sinh "<< ", Giới tính " 
+             << ", Điểm TBC "<< ", Điểm rèn luyện "<< ", Số tín chỉ "<< ", Chuyên ngành "<< ", Trường ";     
+        cout << id << hoTen << boPhan  << namSinh 
+             << gioiTinh << diemTBC << diemRenLuyen 
+             << soTinChi << chuyenNganh << truong << endl;
     }
 
     void capNhatThongTin() override {
@@ -114,6 +116,10 @@ public:
              << ", Giới tính: " << gioiTinh << ", Khoa: " << khoa << ", Vị trí: " << viTri << ", Thành tựu: " << thanhTuu
              << ", Số năm giảng dạy: " << soNamGiangDay << ", Học vị: " << hocVi 
              << ", Số công trình: " << soLuongCongTrinh << ", Trường bộ môn: " << truongBoMon << endl;
+    }
+    
+    string getHocVi() const {
+        return hocVi;
     }
 
     void capNhatThongTin() override {
@@ -172,6 +178,14 @@ public:
              << ", Số năm công tác: " << soNamCongTac << ", Phòng ban: " << phongBan 
              << ", Trình độ: " << trinhDo << ", Số dự án: " << soLuongDuAn << endl;
     }
+     string getViTri() const {
+        return viTri;
+    }
+
+    string getTrinhDo() const {
+        return trinhDo;
+    }
+
 
     void capNhatThongTin() override {
         cout << "Cập nhật thông tin Quản lý:\n";
@@ -275,10 +289,156 @@ void xoaTheoID(vector<Person*>& danhSach, const string& id) {
 
 // Function to display the list of people
 void hienThiDanhSach(const vector<Person*>& danhSach) {
-    for (const Person* p : danhSach) {
-        p->hienThi();
+    int choice1;
+    string loai;
+    
+    // Đọc loại đối tượng
+    cout << "Nhập loại (SinhVien/GiangVien/QuanLy): ";
+    getline(cin, loai); // Đọc toàn bộ dòng, bao gồm khoảng trắng
+
+    if (loai == "SinhVien") {
+        cout << "Chọn chức năng:\n";
+        cout << "1. In toàn bộ danh sách\n";
+        cout << "2. In danh sách theo khoa\n";
+        cout << "3. In danh sách theo lớp\n";
+        cout << "Nhập lựa chọn của bạn: ";
+        cin >> choice1;
+        cin.ignore(); // Bỏ qua ký tự newline còn lại trong bộ đệm
+
+        switch (choice1) {
+            case 1: {
+                // In toàn bộ danh sách
+                for (const Person* p : danhSach) {
+                    p->hienThi();
+                }
+                break;
+            }
+            case 2: {
+                // In danh sách theo khoa
+                string khoa;
+                cout << "Nhập tên khoa: ";
+                getline(cin, khoa);
+                for (const Person* p : danhSach) {
+                    if (p->getBoPhan() == khoa) {
+                        p->hienThi();
+                    }
+                }
+                break;
+            }
+            case 3: {
+                // In danh sách theo lớp
+                string lop;
+                cout << "Nhập tên lớp: ";
+                getline(cin, lop);
+                for (const Person* p : danhSach) {
+                    if (p->getBoPhan().find(lop) != string::npos) {
+                        p->hienThi();
+                    }
+                }
+                break;
+            }
+            default:
+                cout << "Lựa chọn không hợp lệ!\n";
+                break;
+        }
+    } else if (loai == "GiangVien") {
+        cout << "Chọn chức năng:\n";
+        cout << "1. In toàn bộ danh sách\n";
+        cout << "2. In danh sách theo khoa\n";
+        cout << "3. In danh sách theo học vị\n";
+        cout << "Nhập lựa chọn của bạn: ";
+        cin >> choice1;
+        cin.ignore(); // Bỏ qua ký tự newline còn lại trong bộ đệm
+
+        switch (choice1) {
+            case 1: {
+                // In toàn bộ danh sách
+                for (const Person* p : danhSach) {
+                    p->hienThi();
+                }
+                break;
+            }
+            case 2: {
+                // In danh sách theo khoa
+                string khoa;
+                cout << "Nhập tên khoa: ";
+                getline(cin, khoa);
+                for (const Person* p : danhSach) {
+                    if (p->getBoPhan() == khoa) {
+                        p->hienThi();
+                    }
+                }
+                break;
+            }
+            case 3: {
+                // In danh sách theo học vị
+                string hocVi;
+                cout << "Nhập học vị: ";
+                getline(cin, hocVi);
+                for (const Person* p : danhSach) {
+                    const GiangVien* gv = dynamic_cast<const GiangVien*>(p);
+                    if (gv && gv->getHocVi() == hocVi) {
+                        gv->hienThi();
+                    }
+                }
+                break;
+            }
+            default:
+                cout << "Lựa chọn không hợp lệ!\n";
+                break;
+        }
+    } else if (loai == "QuanLy") {
+        cout << "Chọn chức năng:\n";
+        cout << "1. In toàn bộ danh sách\n";
+        cout << "2. In danh sách theo vị trí\n";
+        cout << "3. In danh sách theo trình độ\n";
+        cout << "Nhập lựa chọn của bạn: ";
+        cin >> choice1;
+        cin.ignore(); // Bỏ qua ký tự newline còn lại trong bộ đệm
+
+        switch (choice1) {
+            case 1: {
+                // In toàn bộ danh sách
+                for (const Person* p : danhSach) {
+                    p->hienThi();
+                }
+                break;
+            }
+            case 2: {
+                // In danh sách theo vị trí
+                string viTri;
+                cout << "Nhập vị trí: ";
+                getline(cin, viTri);
+                for (const Person* p : danhSach) {
+                    const QuanLy* ql = dynamic_cast<const QuanLy*>(p);
+                    if (ql && ql->getViTri() == viTri) {
+                        ql->hienThi();
+                    }
+                }
+                break;
+            }
+            case 3: {
+                // In danh sách theo trình độ
+                string trinhDo;
+                cout << "Nhập trình độ: ";
+                getline(cin, trinhDo);
+                for (const Person* p : danhSach) {
+                    const QuanLy* ql = dynamic_cast<const QuanLy*>(p);
+                    if (ql && ql->getTrinhDo() == trinhDo) {
+                        ql->hienThi();
+                    }
+                }
+                break;
+            }
+            default:
+                cout << "Lựa chọn không hợp lệ!\n";
+                break;
+        }
+    } else {
+        cout << "Loại không hợp lệ!\n";
     }
 }
+
 
 // Function to update information by ID
 void capNhatThongTinTheoID(vector<Person*>& danhSach, const string& id) {
@@ -358,7 +518,7 @@ void themNguoiMoi(vector<Person*>& danhSach) {
         cout << "Nhập số công trình: ";
         cin >> soLuongCongTrinh;
         cin.ignore(); // To ignore the newline character left in the buffer
-        cout << "Nhập trường bộ môn: ";
+        cout << "Nhập trưởng bộ môn: ";
         getline(cin, truongBoMon);
         danhSach.push_back(new GiangVien(id, hoTen, boPhan, namSinh, gioiTinh, diaChi, soDienThoai,
                                           khoa, viTri, thanhTuu, soNamGiangDay, hocVi, soLuongCongTrinh, truongBoMon));
@@ -385,13 +545,7 @@ void themNguoiMoi(vector<Person*>& danhSach) {
     }
 }
 
-int main() {
-    vector<Person*> danhSach;
-    int choice;
-    string tenFile;
-
-    while (true) {
-        cout << "Chọn chức năng:\n";
+void menu(){
         cout << "1. Đọc dữ liệu từ file Sinh viên\n";
         cout << "2. Đọc dữ liệu từ file Giảng viên\n";
         cout << "3. Đọc dữ liệu từ file Quản lý\n";
@@ -401,7 +555,22 @@ int main() {
         cout << "7. Hiển thị danh sách người\n";
         cout << "8. Thêm người mới\n";
         cout << "9. Thoát chương trình\n";
-        cout << "Chọn chức năng: ";
+}
+
+int main() {
+    vector<Person*> danhSach;
+    int choice;int choice1;char choice2;
+    string tenFile;
+    cout << "Chương trình xét học bổng và giải thưởng:\n";
+
+    while (true) {
+        cout << "Bạn có muốn in menu chương trình không? (y/n): ";
+        cin >> choice2;
+        if (choice2 == 'y' || choice2 == 'Y') {
+        menu(); 
+        } 
+
+        cout << "Chọn chức năng :";
         cin >> choice;
         cin.ignore(); // To ignore the newline character left in the buffer
 
