@@ -1,0 +1,100 @@
+QL001|Nguyen Van A|Phòng Hành chính|1980|Nam|Hanoi|0912345678|Hiệu trưởng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL002|Le Thi B|Phòng Tổ chức|1985|Nữ|HCMC|0987654321|Phó hiệu trưởng|Nỗ lực trung bình|10|Giáo dục|Thạc sĩ|3
+QL003|Tran Van C|Phòng Giám thị|1990|Nam|Da Nang|0934567890|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL004|Pham Thi D|Phòng Kế toán|1988|Nữ|Hanoi|0945678901|Kế toán trưởng|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL005|Hoang Van E|Phòng Tuyển sinh|1982|Nam|HCMC|0956789012|Chuyên viên tuyển sinh|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL006|Nguyen Thi F|Phòng Phát triển|1995|Nữ|Da Nang|0967890123|Chuyên viên phát triển|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL007|Tran Van G|Phòng Đào tạo|1983|Nam|Hanoi|0978901234|Giám đốc đào tạo|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL008|Le Thi H|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012345|Chuyên viên nghiên cứu|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL009|Nguyen Van I|Phòng Hành chính|1980|Nam|Hanoi|0912345679|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL010|Le Thi J|Phòng Tổ chức|1985|Nữ|HCMC|0987654322|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL011|Tran Van K|Phòng Giám thị|1990|Nam|Da Nang|0934567891|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL012|Pham Thi L|Phòng Kế toán|1988|Nữ|Hanoi|0945678902|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL013|Hoang Van M|Phòng Tuyển sinh|1982|Nam|HCMC|0956789013|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL014|Nguyen Thi N|Phòng Phát triển|1995|Nữ|Da Nang|0967890124|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL015|Tran Van O|Phòng Đào tạo|1983|Nam|Hanoi|0978901235|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL016|Le Thi P|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012346|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL017|Nguyen Van Q|Phòng Hành chính|1980|Nam|Hanoi|0912345680|Hiệu trưởng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL018|Le Thi R|Phòng Tổ chức|1985|Nữ|HCMC|0987654323|Phó hiệu trưởng|Nỗ lực trung bình|10|Giáo dục|Thạc sĩ|3
+QL019|Tran Van S|Phòng Giám thị|1990|Nam|Da Nang|0934567892|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL020|Pham Thi T|Phòng Kế toán|1988|Nữ|Hanoi|0945678903|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL021|Hoang Van U|Phòng Tuyển sinh|1982|Nam|HCMC|0956789014|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL022|Nguyen Thi V|Phòng Phát triển|1995|Nữ|Da Nang|0967890125|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL023|Tran Van W|Phòng Đào tạo|1983|Nam|Hanoi|0978901236|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL024|Le Thi X|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012347|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL025|Nguyen Van Y|Phòng Hành chính|1980|Nam|Hanoi|0912345681|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL026|Le Thi Z|Phòng Tổ chức|1985|Nữ|HCMC|0987654324|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL027|Tran Van A1|Phòng Giám thị|1990|Nam|Da Nang|0934567893|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL028|Pham Thi B1|Phòng Kế toán|1988|Nữ|Hanoi|0945678904|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL029|Hoang Van C1|Phòng Tuyển sinh|1982|Nam|HCMC|0956789015|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL030|Nguyen Thi D1|Phòng Phát triển|1995|Nữ|Da Nang|0967890126|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL031|Tran Van E1|Phòng Đào tạo|1983|Nam|Hanoi|0978901237|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL032|Le Thi F1|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012348|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL033|Nguyen Van G1|Phòng Hành chính|1980|Nam|Hanoi|0912345682|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL034|Le Thi H1|Phòng Tổ chức|1985|Nữ|HCMC|0987654325|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL035|Tran Van I1|Phòng Giám thị|1990|Nam|Da Nang|0934567894|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL036|Pham Thi J1|Phòng Kế toán|1988|Nữ|Hanoi|0945678905|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL037|Hoang Van K1|Phòng Tuyển sinh|1982|Nam|HCMC|0956789016|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL038|Nguyen Thi L1|Phòng Phát triển|1995|Nữ|Da Nang|0967890127|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL039|Tran Van M1|Phòng Đào tạo|1983|Nam|Hanoi|0978901238|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL040|Le Thi N1|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012349|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL041|Nguyen Van O1|Phòng Hành chính|1980|Nam|Hanoi|0912345683|Hiệu trưởng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL042|Le Thi P1|Phòng Tổ chức|1985|Nữ|HCMC|0987654326|Phó hiệu trưởng|Nỗ lực trung bình|10|Giáo dục|Thạc sĩ|3
+QL043|Tran Van Q1|Phòng Giám thị|1990|Nam|Da Nang|0934567895|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL044|Pham Thi R1|Phòng Kế toán|1988|Nữ|Hanoi|0945678906|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL045|Hoang Van S1|Phòng Tuyển sinh|1982|Nam|HCMC|0956789017|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL046|Nguyen Thi T1|Phòng Phát triển|1995|Nữ|Da Nang|0967890128|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL047|Tran Van U1|Phòng Đào tạo|1983|Nam|Hanoi|0978901239|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL048|Le Thi V1|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012350|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL049|Nguyen Van W1|Phòng Hành chính|1980|Nam|Hanoi|0912345684|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL050|Le Thi X1|Phòng Tổ chức|1985|Nữ|HCMC|0987654327|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL051|Tran Van Y1|Phòng Giám thị|1990|Nam|Da Nang|0934567896|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL052|Pham Thi Z1|Phòng Kế toán|1988|Nữ|Hanoi|0945678907|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL053|Hoang Van A2|Phòng Tuyển sinh|1982|Nam|HCMC|0956789018|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL054|Nguyen Thi B2|Phòng Phát triển|1995|Nữ|Da Nang|0967890129|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL055|Tran Van C2|Phòng Đào tạo|1983|Nam|Hanoi|0978901240|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL056|Le Thi D2|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012351|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL057|Nguyen Van E2|Phòng Hành chính|1980|Nam|Hanoi|0912345685|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL058|Le Thi F2|Phòng Tổ chức|1985|Nữ|HCMC|0987654328|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL059|Tran Van G2|Phòng Giám thị|1990|Nam|Da Nang|0934567897|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL060|Pham Thi H2|Phòng Kế toán|1988|Nữ|Hanoi|0945678908|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL061|Hoang Van I2|Phòng Tuyển sinh|1982|Nam|HCMC|0956789019|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL062|Nguyen Thi J2|Phòng Phát triển|1995|Nữ|Da Nang|0967890130|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL063|Tran Van K2|Phòng Đào tạo|1983|Nam|Hanoi|0978901241|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL064|Le Thi L2|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012352|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL065|Nguyen Van M2|Phòng Hành chính|1980|Nam|Hanoi|0912345686|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL066|Le Thi N2|Phòng Tổ chức|1985|Nữ|HCMC|0987654329|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL067|Tran Van O2|Phòng Giám thị|1990|Nam|Da Nang|0934567898|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL068|Pham Thi P2|Phòng Kế toán|1988|Nữ|Hanoi|0945678909|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL069|Hoang Van Q2|Phòng Tuyển sinh|1982|Nam|HCMC|0956789020|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL070|Nguyen Thi R2|Phòng Phát triển|1995|Nữ|Da Nang|0967890131|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL071|Tran Van S2|Phòng Đào tạo|1983|Nam|Hanoi|0978901242|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL072|Le Thi T2|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012353|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL073|Nguyen Van U2|Phòng Hành chính|1980|Nam|Hanoi|0912345687|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL074|Le Thi V2|Phòng Tổ chức|1985|Nữ|HCMC|0987654330|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL075|Tran Van W2|Phòng Giám thị|1990|Nam|Da Nang|0934567899|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL076|Pham Thi X2|Phòng Kế toán|1988|Nữ|Hanoi|0945678910|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL077|Hoang Van Y2|Phòng Tuyển sinh|1982|Nam|HCMC|0956789021|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL078|Nguyen Thi Z2|Phòng Phát triển|1995|Nữ|Da Nang|0967890132|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL079|Tran Van A3|Phòng Đào tạo|1983|Nam|Hanoi|0978901243|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL080|Le Thi B3|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012354|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL081|Nguyen Van C3|Phòng Hành chính|1980|Nam|Hanoi|0912345688|Hiệu trưởng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL082|Le Thi D3|Phòng Tổ chức|1985|Nữ|HCMC|0987654331|Phó hiệu trưởng|Nỗ lực trung bình|10|Giáo dục|Thạc sĩ|3
+QL083|Tran Van E3|Phòng Giám thị|1990|Nam|Da Nang|0934567900|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL084|Pham Thi F3|Phòng Kế toán|1988|Nữ|Hanoi|0945678911|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL085|Hoang Van G3|Phòng Tuyển sinh|1982|Nam|HCMC|0956789022|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL086|Nguyen Thi H3|Phòng Phát triển|1995|Nữ|Da Nang|0967890133|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL087|Tran Van I3|Phòng Đào tạo|1983|Nam|Hanoi|0978901244|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL088|Le Thi J3|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012355|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL089|Nguyen Van K3|Phòng Hành chính|1980|Nam|Hanoi|0912345689|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL090|Le Thi L3|Phòng Tổ chức|1985|Nữ|HCMC|0987654332|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL091|Tran Van M3|Phòng Giám thị|1990|Nam|Da Nang|0934567901|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL092|Pham Thi N3|Phòng Kế toán|1988|Nữ|Hanoi|0945678912|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
+QL093|Hoang Van O3|Phòng Tuyển sinh|1982|Nam|HCMC|0956789023|Chuyên viên|Nỗ lực cao|7|Giáo dục|Cử nhân|3
+QL094|Nguyen Thi P3|Phòng Phát triển|1995|Nữ|Da Nang|0967890134|Chuyên viên|Nỗ lực trung bình|4|Giáo dục|Cử nhân|1
+QL095|Tran Van Q3|Phòng Đào tạo|1983|Nam|Hanoi|0978901245|Giám đốc|Nỗ lực cao|12|Giáo dục|Tiến sĩ|6
+QL096|Le Thi R3|Phòng Nghiên cứu|1991|Nữ|HCMC|0989012356|Chuyên viên|Nỗ lực thấp|3|Giáo dục|Cử nhân|2
+QL097|Nguyen Van S3|Phòng Hành chính|1980|Nam|Hanoi|0912345690|Trưởng phòng|Nỗ lực cao|15|Giáo dục|Thạc sĩ|5
+QL098|Le Thi T3|Phòng Tổ chức|1985|Nữ|HCMC|0987654333|Chuyên viên|Nỗ lực trung bình|10|Giáo dục|Cử nhân|3
+QL099|Tran Van U3|Phòng Giám thị|1990|Nam|Da Nang|0934567902|Giám thị|Nỗ lực cao|8|Giáo dục|Cử nhân|4
+QL100|Pham Thi V3|Phòng Kế toán|1988|Nữ|Hanoi|0945678913|Kế toán|Nỗ lực thấp|5|Tài chính|Cử nhân|2
