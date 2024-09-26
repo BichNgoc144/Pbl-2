@@ -1,0 +1,99 @@
+SV001|Nguyen Van A|K01|2000|Nam|Hanoi|0912345678|8.5|9.1|Đại học Bách Khoa
+SV003|Tran Van C|K03|2001|Nam|Da Nang|0911122334|9.0|9.5|30|CK|Đại học Bách Khoa
+SV004|Nguyen Thi D|K01|2002|Nu|Hanoi|0912233445|8.0|8.5|22|CĐT|Đại học Bách Khoa
+SV005|Le Van E|K02|2000|Nam|HCMC|0988765432|7.8|8.2|18|CNSH|Đại học Bách Khoa
+SV006|Tran Thi F|K03|1998|Nu|Da Nang|0913344556|8.7|9.1|26|CNTT|Đại học Bách Khoa
+SV007|Nguyen Van G|K01|1999|Nam|Hanoi|0914455667|7.9|8.6|20|TĐH|Đại học Bách Khoa
+SV008|Le Thi H|K02|2001|Nu|HCMC|0989876543|8.4|9.0|23|CK|Đại học Bách Khoa
+SV009|Tran Van I|K03|2002|Nam|Da Nang|0915566778|9.1|9.4|28|CĐT|Đại học Bách Khoa
+SV010|Nguyen Thi J|K01|2000|Nu|Hanoi|0916677889|8.3|8.8|21|CNSH|Đại học Bách Khoa
+SV011|Le Van K|K01|1998|Nam|Hanoi|0917788990|8.2|8.9|22|CNTT|Đại học Bách Khoa
+SV012|Tran Thi L|K02|1999|Nu|HCMC|0987654320|7.6|8.3|19|TĐH|Đại học Bách Khoa
+SV013|Nguyen Van M|K03|2000|Nam|Da Nang|0918899001|9.2|9.0|25|CK|Đại học Bách Khoa
+SV014|Le Thi N|K01|2001|Nu|Hanoi|0919900112|8.1|8.7|20|CĐT|Đại học Bách Khoa
+SV015|Tran Van O|K02|2002|Nam|HCMC|0988765431|7.9|8.1|18|CNSH|Đại học Bách Khoa
+SV016|Nguyen Thi P|K03|1999|Nu|Da Nang|0911122335|8.6|9.2|27|CNTT|Đại học Bách Khoa
+SV017|Le Van Q|K01|2000|Nam|Hanoi|0912233446|8.0|8.4|23|TĐH|Đại học Bách Khoa
+SV018|Tran Thi R|K02|1998|Nu|HCMC|0989876544|7.7|8.5|21|CK|Đại học Bách Khoa
+SV019|Nguyen Van S|K03|1999|Nam|Da Nang|0913344557|9.0|9.3|22|CĐT|Đại học Bách Khoa
+SV020|Le Thi T|K01|2002|Nu|Hanoi|0914455668|8.4|8.9|24|CNSH|Đại học Bách Khoa
+SV021|Tran Van U|K02|2001|Nam|HCMC|0987654322|7.8|8.0|19|CNTT|Đại học Bách Khoa
+SV022|Nguyen Thi V|K03|2000|Nu|Da Nang|0915566779|8.9|9.4|26|TĐH|Đại học Bách Khoa
+SV023|Le Van W|K01|1999|Nam|Hanoi|0916677880|8.2|8.6|20|CK|Đại học Bách Khoa
+SV024|Tran Thi X|K02|2002|Nu|HCMC|0988765433|7.6|8.2|22|CĐnT|Đại học Bách Khoa
+SV025|Nguyen Van Y|K03|2001|Nam|Da Nang|0917788991|9.1|9.5|24|CNSH|Đại học Bách Khoa
+SV026|Le Thi Z|K01|2000|Nu|Hanoi|0918899002|8.0|8.7|21|CNTT|Đại học Bách Khoa
+SV027|Tran Van A1|K02|1998|Nam|HCMC|0987654323|7.9|8.4|20|TĐH|Đại học Bách Khoa
+SV028|Nguyen Thi B1|K03|1999|Nu|Da Nang|0919900113|8.6|9.2|22|CK|Đại học Bách Khoa
+SV029|Le Van C1|K01|2001|Nam|Hanoi|0911122336|8.1|8.5|23|CĐT|Đại học Bách Khoa
+SV030|Tran Thi D1|K02|2000|Nu|HCMC|0988765434|7.7|8.3|19|CNSH|Đại học Bách Khoa
+SV031|Nguyen Van E1|K03|1999|Nam|Da Nang|0912233447|9.2|9.6|28|CNTT|Đại học Bách Khoa
+SV032|Le Thi F1|K01|2002|Nu|Hanoi|0913344558|8.4|8.9|21|TĐH|Đại học Bách Khoa
+SV033|Tran Van G1|K02|1998|Nam|HCMC|0989876545|7.8|8.0|22|CK|Đại học Bách Khoa
+SV034|Nguyen Thi H1|K03|1999|Nu|Da Nang|0914455669|8.9|9.3|26|CĐT|Đại học Bách Khoa
+SV035|Le Van I1|K01|2000|Nam|Hanoi|0915566770|8.2|8.8|24|CNSH|Đại học Bách Khoa
+SV036|Tran Thi J1|K02|2001|Nu|HCMC|0987654325|7.9|8.4|21|CNTT|Đại học Bách Khoa
+SV037|Nguyen Van K1|K03|1998|Nam|Da Nang|0916677881|9.0|9.7|29|TĐH|Đại học Bách Khoa
+SV038|Le Thi L1|K01|1999|Nu|Hanoi|0917788992|8.4|8.7|20|CK|Đại học Bách Khoa
+SV039|Tran Van M1|K02|2000|Nam|HCMC|0989876546|7.7|8.2|23|CĐT|Đại học Bách Khoa
+SV040|Nguyen Thi N1|K03|2001|Nu|Da Nang|0918899003|8.8|9.0|22|CNSH|Đại học Bách Khoa
+SV041|Le Van O1|K01|2002|Nam|Hanoi|0919900114|8.0|8.4|21|CNTT|Đại học Bách Khoa
+SV042|Tran Thi P1|K02|1999|Nu|HCMC|0987654326|7.9|8.1|20|TĐH|Đại học Bách Khoa
+SV043|Nguyen Van Q1|K03|2000|Nam|Da Nang|0911122337|9.1|9.6|27|CK|Đại học Bách Khoa
+SV044|Le Thi R1|K01|1998|Nu|Hanoi|0912233448|8.2|8.8|23|CĐT|Đại học Bách Khoa
+SV045|Tran Van S1|K02|1999|Nam|HCMC|0988765436|7.8|8.5|22|CNSH|Đại học Bách Khoa
+SV046|Nguyen Thi T1|K03|2001|Nu|Da Nang|0913344559|8.6|9.2|25|CNTT|Đại học Bách Khoa
+SV047|Le Van U1|K01|2002|Nam|Hanoi|0914455670|8.0|8.3|24|TĐH|Đại học Bách Khoa
+SV048|Tran Thi V1|K02|2000|Nu|HCMC|0987654327|7.7|8.2|21|CK|Đại học Bách Khoa
+SV049|Nguyen Van W1|K03|1998|Nam|Da Nang|0915566780|9.2|9.5|20|CĐT|Đại học Bách Khoa
+SV050|Le Thi X1|K01|1999|Nu|Hanoi|0916677890|8.3|8.7|23|CNSH|Đại học Bách Khoa
+SV051|Tran Van Y1|K02|2000|Nam|HCMC|0988765437|7.9|8.4|22|CNTT|Đại học Bách Khoa
+SV052|Nguyen Thi Z1|K03|1999|Nu|Da Nang|0917788993|8.8|9.1|26|TĐH|Đại học Bách Khoa
+SV053|Le Van A2|K01|2001|Nam|Hanoi|0918899004|8.2|8.5|21|CK|Đại học Bách Khoa
+SV054|Tran Thi B2|K02|1998|Nu|HCMC|0989876547|7.8|8.0|22|CĐT|Đại học Bách Khoa
+SV055|Nguyen Van C2|K03|1999|Nam|Da Nang|0919900115|9.1|9.4|27|CNSH|Đại học Bách Khoa
+SV056|Le Thi D2|K01|2002|Nu|Hanoi|0911122338|8.5|8.8|20|CNTT|Đại học Bách Khoa
+SV057|Tran Van E2|K02|2000|Nam|HCMC|0988765438|7.9|8.3|18|TĐH|Đại học Bách Khoa
+SV058|Nguyen Thi F2|K03|1999|Nu|Da Nang|0912233449|8.6|9.2|22|CK|Đại học Bách Khoa
+SV059|Le Van G2|K01|2001|Nam|Hanoi|0913344550|8.1|8.7|23|CĐT|Đại học Bách Khoa
+SV060|Tran Thi H2|K02|2000|Nu|HCMC|0989876548|7.8|8.4|19|CNSH|Đại học Bách Khoa
+SV061|Nguyen Van I2|K03|1998|Nam|Da Nang|0914455671|9.2|9.6|26|CNTT|Đại học Bách Khoa
+SV062|Le Thi J2|K01|1999|Nu|Hanoi|0915566782|8.4|8.9|21|TĐH|Đại học Bách Khoa
+SV063|Tran Van K2|K02|2000|Nam|HCMC|0987654328|7.7|8.1|20|CK|Đại học Bách Khoa
+SV064|Nguyen Thi L2|K03|1999|Nu|Da Nang|0916677891|8.8|9.2|22|CĐT|Đại học Bách Khoa
+SV065|Le Van M2|K01|2002|Nam|Hanoi|0917788994|8.0|8.4|23|CNSH|Đại học Bách Khoa
+SV066|Tran Thi N2|K02|1998|Nu|HCMC|0989876549|7.9|8.3|22|CNTT|Đại học Bách Khoa
+SV067|Nguyen Van O2|K03|1999|Nam|Da Nang|0918899005|9.1|9.7|27|TĐH|Đại học Bách Khoa
+SV068|Le Thi P2|K01|2000|Nu|Hanoi|0919900116|8.2|8.7|20|CK|Đại học Bách Khoa
+SV069|Tran Van Q2|K02|2001|Nam|HCMC|0987654329|7.8|8.2|19|CĐT|Đại học Bách Khoa
+SV070|Nguyen Thi R2|K03|1998|Nu|Da Nang|0912233450|8.9|9.4|22|CNSH|Đại học Bách Khoa
+SV071|Le Van S2|K01|1999|Nam|Hanoi|0913344551|8.0|8.5|23|CNTT|Đại học Bách Khoa
+SV072|Tran Thi T2|K02|2000|Nu|HCMC|0989876550|7.6|8.1|21|TĐH|Đại học Bách Khoa
+SV073|Nguyen Van U2|K03|1999|Nam|Da Nang|0914455672|8.6|9.2|25|CK|Đại học Bách Khoa
+SV074|Le Thi V2|K01|2001|Nu|Hanoi|0915566783|8.3|8.8|24|CĐT|Đại học Bách Khoa
+SV075|Tran Van W2|K02|2000|Nam|HCMC|0987654330|7.9|8.2|22|CNSH|Đại học Bách Khoa
+SV076|Nguyen Thi X2|K03|1998|Nu|Da Nang|0916677892|9.1|9.5|26|CNTT|Đại học Bách Khoa
+SV077|Le Van Y2|K01|1999|Nam|Hanoi|0917788995|8.0|8.6|21|TĐH|Đại học Bách Khoa
+SV078|Tran Thi Z2|K02|2001|Nu|HCMC|0989876551|7.8|8.3|23|CK|Đại học Bách Khoa
+SV079|Nguyen Van A3|K03|2000|Nam|Da Nang|0918899006|8.8|9.2|22|CĐT|Đại học Bách Khoa
+SV080|Le Thi B3|K01|1998|Nu|Hanoi|0919900117|8.4|8.7|20|CNSH|Đại học Bách Khoa
+SV081|Tran Van C3|K02|1999|Nam|HCMC|0987654331|7.7|8.2|21|CNTT|Đại học Bách Khoa
+SV082|Nguyen Thi D3|K03|2001|Nu|Da Nang|0912233451|9.2|9.6|27|TĐH|Đại học Bách Khoa
+SV083|Le Van E3|K01|2002|Nam|Hanoi|0913344552|8.1|8.5|22|CK|Đại học Bách Khoa
+SV084|Tran Thi F3|K02|2000|Nu|HCMC|0989876552|7.9|8.4|18|CĐT|Đại học Bách Khoa
+SV085|Nguyen Van G3|K03|1999|Nam|Da Nang|0914455673|8.6|9.1|26|CNSH|Đại học Bách Khoa
+SV086|Le Thi H3|K01|1998|Nu|Hanoi|0915566784|8.0|8.8|23|CNTT|Đại học Bách Khoa
+SV087|Tran Van I3|K02|1999|Nam|HCMC|0987654332|7.8|8.3|21|TĐH|Đại học Bách Khoa
+SV088|Nguyen Thi J3|K03|2000|Nu|Da Nang|0916677893|8.8|9.4|22|CK|Đại học Bách Khoa
+SV089|Le Van K3|K01|2001|Nam|Hanoi|0917788996|8.2|8.6|20|CĐT|Đại học Bách Khoa
+SV090|Tran Thi L3|K02|1998|Nu|HCMC|0989876553|7.9|8.4|23|CNSH|Đại học Bách Khoa
+SV091|Nguyen Van M3|K03|1999|Nam|Da Nang|0918899007|9.1|9.7|22|CNTT|Đại học Bách Khoa
+SV092|Le Thi N3|K01|2000|Nu|Hanoi|0919900118|8.3|8.8|21|TĐH|Đại học Bách Khoa
+SV093|Tran Van O3|K02|2001|Nam|HCMC|0987654333|7.6|8.0|19|CK|Đại học Bách Khoa
+SV094|Nguyen Thi P3|K03|1998|Nu|Da Nang|0912233452|8.9|9.3|22|CĐT|Đại học Bách Khoa
+SV095|Le Van Q3|K01|1999|Nam|Hanoi|0913344553|8.0|8.5|20|CNSH|Đại học Bách Khoa
+SV096|Tran Thi R3|K02|2000|Nu|HCMC|0989876554|7.8|8.1|22|CNTT|Đại học Bách Khoa
+SV097|Nguyen Van S3|K03|1999|Nam|Da Nang|0914455674|8.6|9.0|25|TĐH|Đại học Bách Khoa
+SV098|Le Thi T3|K01|2002|Nu|Hanoi|0915566785|8.2|8.7|21|CK|Đại học Bách Khoa
+SV099|Tran Van U3|K02|1998|Nam|HCMC|0987654334|7.9|8.4|23|CĐT|Đại học Bách Khoa
+SV100|Nguyen Thi V3|K03|1999|Nu|Da Nang|0916677894|9.2|9.5|22|CNSH|Đại học Bách Khoa
