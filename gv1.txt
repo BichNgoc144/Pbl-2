@@ -1,0 +1,100 @@
+GV001|Nguyen Van A|Khoa CNTT|1975|Nam|123 Nguyen Trai|0123456789|Khoa Cong nghe thong tin|Pho giao su|Giang day tot|15|Tien si|10|Truong Bo Mon CNTT
+GV002|Tran Thi B|Khoa CNTT|1980|Nu|456 Le Loi|0987654321|Khoa Cong nghe thong tin|Pho giao su|Nghien cuu xuat sac|12|Tien si|8|
+GV003|Le Van C|Khoa CNTT|1978|Nam|789 Tran Phu|0912345678|Khoa Cong nghe thong tin|Pho giao su|Chuyen gia trong nuoc|13|Thac si|7|Truong Bo Mon CNTT
+GV004|Pham Thi D|Khoa CNTT|1985|Nu|321 Hoang Dieu|0934567890|Khoa Cong nghe thong tin|Pho giao su|Tham gia du an cong nghe|10|Tien si|9|
+GV005|Hoang Van E|Khoa CNTT|1979|Nam|654 Phan Boi Chau|0954321234|Khoa Cong nghe thong tin|Pho giao su|Phat minh moi|16|Tien si|9|
+GV006|Vu Thi F|Khoa CNTT|1982|Nu|135 Nguyen Hue|0941234567|Khoa Cong nghe thong tin|Giao su|Tham gia hoi thao quoc te|20|Tien si|15|
+GV007|Dang Van G|Khoa CNTT|1987|Nam|789 Le Lai|0929876543|Khoa Cong nghe thong tin|Pho giao su|Nghien cuu AI|12|Tien si|11|
+GV008|Bui Thi H|Khoa CNTT|1981|Nu|321 Bach Dang|0943218765|Khoa Cong nghe thong tin|Pho giao su|Chuyen gia phan mem|17|Thac si|11|
+GV009|Vo Van I|Khoa CNTT|1985|Nam|543 Ly Thuong Kiet|0932123456|Khoa Cong nghe thong tin|Pho giao su|Phat trien mang|11|Tien si|6|
+GV010|Mai Thi J|Khoa CNTT|1980|Nu|246 Bach Dang|0921456789|Khoa Cong nghe thong tin|Giao su|Nghien cuu mang may tinh|19|Tien si|13|Truong Bo Mon CNTT
+GV011|Nguyen Van K|Khoa CNTT|1976|Nam|123 Dien Bien Phu|0934567777|Khoa Cong nghe thong tin|Pho giao su|Giang day tot|18|Tien si|10|
+GV012|Pham Thi L|Khoa CNTT|1979|Nu|654 Hai Ba Trung|0976543333|Khoa Cong nghe thong tin|Pho giao su|Tham gia du an AI|16|Tien si|11|
+GV013|Tran Van M|Khoa CNTT|1985|Nam|789 Le Loi|0912349999|Khoa Cong nghe thong tin|Pho giao su|Nghien cuu du lieu lon|12|Thac si|8|
+GV014|Le Thi N|Khoa CNTT|1978|Nu|321 Pasteur|0981234444|Khoa Cong nghe thong tin|Pho giao su|Chuyen gia an ninh mang|15|Tien si|10|
+GV015|Hoang Van O|Khoa CNTT|1987|Nam|654 Tran Quoc Toan|0959876543|Khoa Cong nghe thong tin|Pho giao su|Lap trinh ung dung|10|Tien si|6|
+GV016|Nguyen Thi P|Khoa CNTT|1980|Nu|135 Tran Hung Dao|0932112345|Khoa Cong nghe thong tin|Giao su|Nghien cuu ve du lieu lon|22|Tien si|16|
+GV017|Tran Van Q|Khoa CNTT|1979|Nam|789 Tran Phu|0921234567|Khoa Cong nghe thong tin|Pho giao su|Phat trien he thong|13|Thac si|9|
+GV018|Le Thi R|Khoa CNTT|1983|Nu|456 Nguyen Trai|0912349876|Khoa Cong nghe thong tin|Pho giao su|Phat minh ve mang|14|Tien si|11|
+GV019|Dang Van S|Khoa CNTT|1981|Nam|654 Le Loi|0945676543|Khoa Cong nghe thong tin|Pho giao su|An ninh thong tin|19|Tien si|12|
+GV020|Bui Thi T|Khoa CNTT|1984|Nu|321 Hai Ba Trung|0971234321|Khoa Cong nghe thong tin|Pho giao su|Tham gia du an AI|17|Thac si|10|
+GV021|Nguyen Van U|Khoa CDT|1977|Nam|123 Nguyen Thi Minh Khai|0938765432|Khoa Dien tu vien thong|Pho giao su|Nghien cuu he thong vien thong|20|Tien si|15|Truong Bo Mon CDT
+GV022|Tran Thi V|Khoa CDT|1982|Nu|654 Tran Hung Dao|0954321876|Khoa Dien tu vien thong|Pho giao su|Phat trien mang|12|Thac si|8|
+GV023|Le Van W|Khoa CDT|1981|Nam|789 Pasteur|0912123456|Khoa Dien tu vien thong|Pho giao su|Chuyen gia vien thong|14|Tien si|10|Truong Bo Mon CDT
+GV024|Pham Thi X|Khoa CDT|1984|Nu|456 Le Loi|0943217654|Khoa Dien tu vien thong|Pho giao su|Tham gia du an mang|15|Thac si|9|
+GV025|Hoang Van Y|Khoa CDT|1979|Nam|321 Tran Quang Khai|0977654321|Khoa Dien tu vien thong|Pho giao su|Phat trien cong nghe 5G|18|Tien si|11|
+GV026|Vu Thi Z|Khoa CDT|1983|Nu|654 Nguyen Trai|0921234321|Khoa Dien tu vien thong|Giao su|Hoi thao quoc te|25|Tien si|19|
+GV027|Dang Van AA|Khoa CDT|1975|Nam|789 Tran Quoc Toan|0944321098|Khoa Dien tu vien thong|Pho giao su|Chuyen gia vien thong|20|Tien si|12|
+GV028|Bui Thi AB|Khoa CDT|1981|Nu|135 Le Lai|0934321234|Khoa Dien tu vien thong|Pho giao su|Phat minh moi ve vien thong|17|Thac si|13|Truong Bo Mon CDT
+GV029|Vo Van AC|Khoa CDT|1985|Nam|654 Le Thanh Ton|0912343321|Khoa Dien tu vien thong|Pho giao su|Phat trien cong nghe moi|11|Tien si|9|
+GV030|Mai Thi AD|Khoa CDT|1980|Nu|246 Phan Dang Luu|0921239876|Khoa Dien tu vien thong|Giao su|Nghien cuu thiet bi mang|19|Tien si|14|
+GV031|Nguyen Van AE|Khoa CDT|1977|Nam|123 Pham Van Dong|0971234567|Khoa Tu dong hoa|Pho giao su|Nghien cuu ve tu dong hoa|15|Tien si|10|Truong Bo Mon TDH
+GV032|Tran Thi AF|Khoa CDT|1982|Nu|456 Le Duan|0917654321|Khoa Tu dong hoa|Pho giao su|Phat minh ve he thong tu dong|12|Tien si|9|
+GV033|Le Van AG|Khoa CDT|1980|Nam|654 Bach Dang|0932123456|Khoa Tu dong hoa|Pho giao su|Chuyen gia tu dong hoa|13|Thac si|7|
+GV034|Pham Thi AH|Khoa CDT|1984|Nu|789 Dien Bien Phu|0957654321|Khoa Tu dong hoa|Pho giao su|Tham gia du an tu dong|16|Tien si|11|
+GV035|Hoang Van AI|Khoa CDT|1981|Nam|321 Hai Ba Trung|0912345678|Khoa Tu dong hoa|Pho giao su|Phat trien cong nghe tu dong|19|Tien si|10|
+GV036|Vu Thi AJ|Khoa CDT|1980|Nu|654 Le Lai|0947654321|Khoa Tu dong hoa|Giao su|Hoi thao tu dong quoc te|18|Tien si|14|
+GV037|Dang Van AK|Khoa CDT|1983|Nam|135 Tran Hung Dao|0976543212|Khoa Tu dong hoa|Pho giao su|Nghien cuu thiet bi tu dong|14|Tien si|10|
+GV038|Bui Thi AL|Khoa CDT|1982|Nu|789 Le Loi|0919876543|Khoa Tu dong hoa|Pho giao su|Phat trien thiet bi tu dong|13|Thac si|9|
+GV039|Vo Van AM|Khoa CDT|1985|Nam|321 Hai Ba Trung|0945678765|Khoa Tu dong hoa|Pho giao su|Nghien cuu he thong tu dong|11|Tien si|7|
+GV040|Mai Thi AN|Khoa CDT|1983|Nu|246 Le Loi|0911234321|Khoa Tu dong hoa|Giao su|Tham gia du an tu dong|21|Tien si|15|
+GV041|Nguyen Van AO|Khoa TDH|1975|Nam|123 Le Lai|0912345678|Khoa Tu dong hoa|Pho giao su|Phat trien he thong tu dong hoa|20|Tien si|15|Truong Bo Mon TDH
+GV042|Tran Thi AP|Khoa TDH|1981|Nu|456 Le Loi|0929876543|Khoa Tu dong hoa|Pho giao su|Phat minh ve cong nghe tu dong hoa|15|Thac si|10|
+GV043|Le Van AQ|Khoa TDH|1979|Nam|789 Tran Hung Dao|0932123456|Khoa Tu dong hoa|Pho giao su|Chuyen gia ve he thong tu dong|18|Tien si|11|Truong Bo Mon TDH
+GV044|Pham Thi AR|Khoa TDH|1984|Nu|321 Bach Dang|0919876543|Khoa Tu dong hoa|Pho giao su|Phat trien cong nghe dien tu|16|Thac si|9|
+GV045|Hoang Van AS|Khoa TDH|1980|Nam|654 Nguyen Trai|0945678765|Khoa Tu dong hoa|Pho giao su|Nghien cuu robot tu dong|13|Tien si|8|
+GV046|Vu Thi AT|Khoa TDH|1982|Nu|123 Phan Boi Chau|0958765432|Khoa Tu dong hoa|Giao su|Tham gia hoi thao quoc te|22|Tien si|17|
+GV047|Dang Van AU|Khoa TDH|1985|Nam|321 Nguyen Hue|0917654321|Khoa Tu dong hoa|Pho giao su|Phat trien AI va tu dong|12|Tien si|9|
+GV048|Bui Thi AV|Khoa TDH|1980|Nu|654 Hai Ba Trung|0929876543|Khoa Tu dong hoa|Pho giao su|Chuyen gia ve cong nghe AI|14|Thac si|10|
+GV049|Vo Van AW|Khoa TDH|1983|Nam|789 Le Loi|0912348765|Khoa Tu dong hoa|Pho giao su|Nghien cuu robot cong nghiep|11|Tien si|8|
+GV050|Mai Thi AX|Khoa TDH|1978|Nu|246 Bach Dang|0932129876|Khoa Tu dong hoa|Giao su|Phat trien tu dong hoa cong nghiep|20|Tien si|14|
+GV051|Nguyen Van AY|Khoa TDH|1976|Nam|123 Nguyen Trai|0949876543|Khoa Tu dong hoa|Pho giao su|Chuyen gia ve tu dong hoa AI|18|Tien si|13|
+GV052|Tran Thi AZ|Khoa TDH|1982|Nu|654 Tran Hung Dao|0921234321|Khoa Tu dong hoa|Pho giao su|Phat minh ve he thong tu dong|16|Thac si|9|
+GV053|Le Van BA|Khoa TDH|1981|Nam|321 Bach Dang|0914321098|Khoa Tu dong hoa|Pho giao su|Nghien cuu cong nghe AI|15|Tien si|10|
+GV054|Pham Thi BB|Khoa TDH|1980|Nu|246 Le Loi|0949876543|Khoa Tu dong hoa|Pho giao su|Phat trien robot AI|14|Thac si|11|
+GV055|Hoang Van BC|Khoa TDH|1983|Nam|789 Le Lai|0939876543|Khoa Tu dong hoa|Pho giao su|Nghien cuu tu dong hoa AI|13|Tien si|8|
+GV056|Vu Thi BD|Khoa TDH|1985|Nu|123 Bach Dang|0918765432|Khoa Tu dong hoa|Giao su|Phat trien he thong robot|22|Tien si|15|
+GV057|Dang Van BE|Khoa TDH|1981|Nam|654 Le Duan|0927654321|Khoa Tu dong hoa|Pho giao su|Chuyen gia ve he thong tu dong cong nghiep|16|Tien si|11|
+GV058|Bui Thi BF|Khoa TDH|1980|Nu|321 Le Lai|0919876543|Khoa Tu dong hoa|Pho giao su|Phat minh ve cong nghe tu dong|14|Thac si|10|
+GV059|Vo Van BG|Khoa TDH|1984|Nam|789 Nguyen Trai|0932123456|Khoa Tu dong hoa|Pho giao su|Nghien cuu AI tu dong|12|Tien si|9|
+GV060|Mai Thi BH|Khoa TDH|1983|Nu|654 Tran Phu|0947654321|Khoa Tu dong hoa|Giao su|Phat trien cong nghe tu dong hoa AI|21|Tien si|14|
+GV061|Nguyen Thi FA|Khoa CK|1982|Nu|123 Hoang Hoa Tham|0939876543|Khoa Co khi|Pho giao su|Phat minh ve thiet bi co khi|17|Tien si|13|
+GV062|Tran Van FB|Khoa CK|1981|Nam|456 Le Loi|0912345678|Khoa Co khi|Giao su|Nghien cuu va phat trien co khi|20|Tien si|15|
+GV063|Le Thi FC|Khoa CK|1983|Nu|789 Bach Dang|0943218765|Khoa Co khi|Pho giao su|Chuyen gia ve co khi|18|Tien si|14|
+GV064|Pham Van FD|Khoa CK|1980|Nam|321 Nguyen Trai|0923456789|Khoa Co khi|Pho giao su|Phat trien co khi moi|16|Tien si|12|
+GV065|Hoang Thi FE|Khoa CK|1984|Nu|654 Tran Phu|0932345678|Khoa Co khi|Giao su|Tham gia du an co khi|22|Tien si|16|
+GV066|Vu Thi FF|Khoa CK|1982|Nu|789 Le Loi|0945678765|Khoa Co khi|Pho giao su|Nghien cuu ky thuat co khi|18|Tien si|13|
+GV067|Dang Van FG|Khoa CK|1981|Nam|321 Le Lai|0918765432|Khoa Co khi|Pho giao su|Phat minh ve may moc|17|Tien si|12|
+GV068|Bui Thi FH|Khoa CK|1984|Nu|654 Hai Ba Trung|0932345678|Khoa Co khi|Giao su|Nghien cuu va phat trien co khi|15|Tien si|11|
+GV069|Vo Thi FI|Khoa CK|1980|Nu|789 Bach Dang|0943217654|Khoa Co khi|Pho giao su|Phat minh ve thiet bi co khi|20|Tien si|14|
+GV070|Mai Thi FJ|Khoa CK|1982|Nu|321 Le Loi|0929876543|Khoa Co khi|Giao su|Chuyen gia ve co khi|18|Tien si|12|
+GV071|Nguyen Thi FK|Khoa CK|1981|Nu|456 Tran Phu|0938765432|Khoa Co khi|Pho giao su|Phat trien co khi moi|16|Tien si|10|
+GV072|Tran Van FL|Khoa CK|1984|Nam|789 Le Loi|0912345678|Khoa Co khi|Giao su|Nghien cuu may moc|20|Tien si|13|
+GV073|Le Thi FM|Khoa CK|1983|Nu|321 Nguyen Trai|0923456789|Khoa Co khi|Pho giao su|Chuyen gia ve co khi|15|Tien si|11|
+GV074|Pham Van FN|Khoa CK|1982|Nam|654 Hai Ba Trung|0939876543|Khoa Co khi|Giao su|Nghien cuu va phat trien co khi|18|Tien si|14|
+GV075|Hoang Thi FO|Khoa CK|1981|Nu|789 Tran Phu|0945678765|Khoa Co khi|Pho giao su|Phat minh ve thiet bi co khi|20|Tien si|12|
+GV076|Vu Thi FP|Khoa CK|1984|Nu|321 Bach Dang|0912345678|Khoa Co khi|Giao su|Nghien cuu va phat trien co khi|17|Tien si|11|
+GV077|Dang Van FQ|Khoa CK|1980|Nam|654 Le Loi|0932345678|Khoa Co khi|Pho giao su|Phat trien co khi moi|16|Tien si|12|
+GV078|Bui Thi FR|Khoa CK|1982|Nu|789 Nguyen Hue|0943217654|Khoa Co khi|Giao su|Nghien cuu may moc|18|Tien si|13|
+GV079|Vo Thi FS|Khoa CK|1981|Nu|321 Le Loi|0923456789|Khoa Co khi|Pho giao su|Phat minh ve co khi moi|20|Tien si|14|
+GV080|Mai Thi FT|Khoa CK|1984|Nu|456 Tran Phu|0918765432|Khoa Co khi|Giao su|Tham gia du an co khi|22|Tien si|15|
+GV081|Nguyen Thi CG|Khoa CNSH|1982|Nu|123 Tran Phu|0912345678|Khoa Cong nghe sinh hoc|Pho giao su|Phat trien ky thuat sinh hoc|16|Tien si|13|
+GV082|Tran Van CH|Khoa CNSH|1983|Nam|456 Le Loi|0923456789|Khoa Cong nghe sinh hoc|Pho giao su|Nghien cuu vi sinh|18|Tien si|12|
+GV083|Le Thi CI|Khoa CNSH|1980|Nu|789 Nguyen Hue|0938765432|Khoa Cong nghe sinh hoc|Giao su|Phat minh ve sinh hoc|17|Tien si|14|
+GV084|Pham Van CJ|Khoa CNSH|1985|Nam|321 Bach Dang|0945678765|Khoa Cong nghe sinh hoc|Pho giao su|Chuyen gia ve sinh hoc|19|Tien si|15|
+GV085|Hoang Thi CK|Khoa CNSH|1982|Nu|654 Hai Ba Trung|0919876543|Khoa Cong nghe sinh hoc|Giao su|Nghien cuu sinh hoc|20|Tien si|16|
+GV086|Vu Thi CL|Khoa CNSH|1981|Nu|789 Tran Phu|0932345678|Khoa Cong nghe sinh hoc|Pho giao su|Phat trien ky thuat sinh hoc|17|Tien si|14|
+GV087|Dang Van CM|Khoa CNSH|1983|Nam|321 Le Loi|0923456789|Khoa Cong nghe sinh hoc|Giao su|Chuyen gia ve vi sinh|18|Tien si|12|
+GV088|Bui Thi CN|Khoa CNSH|1982|Nu|654 Nguyen Trai|0939876543|Khoa Cong nghe sinh hoc|Pho giao su|Phat minh ve cong nghe sinh hoc|15|Tien si|13|
+GV089|Vo Thi CO|Khoa CNSH|1984|Nu|789 Bach Dang|0945678765|Khoa Cong nghe sinh hoc|Giao su|Nghien cuu vi sinh|20|Tien si|14|
+GV090|Mai Thi CP|Khoa CNSH|1981|Nu|321 Tran Phu|0932345678|Khoa Cong nghe sinh hoc|Pho giao su|Chuyen gia ve sinh hoc|18|Tien si|12|
+GV091|Nguyen Thi CQ|Khoa CNSH|1983|Nu|456 Le Loi|0912345678|Khoa Cong nghe sinh hoc|Giao su|Phat trien cong nghe sinh hoc|17|Tien si|13|
+GV092|Tran Van CR|Khoa CNSH|1980|Nam|789 Nguyen Hue|0923456789|Khoa Cong nghe sinh hoc|Pho giao su|Chuyen gia ve vi sinh|16|Tien si|11|
+GV093|Le Thi CS|Khoa CNSH|1984|Nu|321 Bach Dang|0939876543|Khoa Cong nghe sinh hoc|Giao su|Phat minh ve sinh hoc|18|Tien si|14|
+GV094|Pham Thi CT|Khoa CNSH|1982|Nam|654 Hai Ba Trung|0923456789|Khoa Cong nghe sinh hoc|Pho giao su|Nghien cuu ky thuat sinh hoc|20|Tien si|12|
+GV095|Hoang Thi CU|Khoa CNSH|1983|Nu|789 Tran Phu|0932345678|Khoa Cong nghe sinh hoc|Giao su|Phat trien cong nghe vi sinh|17|Tien si|13|
+GV096|Vu Thi CV|Khoa CNSH|1984|Nu|321 Le Loi|0943217654|Khoa Cong nghe sinh hoc|Pho giao su|Nghien cuu sinh hoc|18|Tien si|14|
+GV097|Dang Van CW|Khoa CNSH|1981|Nam|654 Nguyen Trai|0938765432|Khoa Cong nghe sinh hoc|Giao su|Chuyen gia ve sinh hoc|15|Tien si|12|
+GV098|Bui Thi CX|Khoa CNSH|1982|Nu|789 Bach Dang|0923456789|Khoa Cong nghe sinh hoc|Pho giao su|Nghien cuu sinh hoc|20|Tien si|13|
+GV099|Vo Thi CY|Khoa CNSH|1984|Nu|321 Tran Phu|0932345678|Khoa Cong nghe sinh hoc|Giao su|Chuyen gia vi sinh|17|Tien si|14|
+GV0100|Mai Thi CZ|Khoa CNSH|1983|Nu|654 Le Loi|0923456789|Khoa Cong nghe sinh hoc|Pho giao su|Phat trien ky thuat sinh hoc|19|Tien si|15|
